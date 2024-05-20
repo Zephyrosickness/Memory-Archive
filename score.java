@@ -244,6 +244,7 @@ public class score extends display{
     public static boolean legitimacyCheck(int pure, int far, int miss, int combo, double score){
         //init var
         int total = pure+far+miss;
+        score = (int)score;
 
         //checks if all the values are positive integers and that it all adds up to the total combo. both of these need to be true or the score doesnt display
         if(pure >= 0&&far >=0 &&miss>=0&&total==combo&&score<=10000000){
@@ -251,6 +252,7 @@ public class score extends display{
             return result;
         }else{
             boolean result = false;
+            System.out.println("fucked up score"+score);
             return result;
         }
     }

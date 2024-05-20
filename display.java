@@ -311,6 +311,7 @@ public class display extends JFrame {
 
         if(Files.exists(path) ==false){
             jacket = new File("./assets/placeholder.jpg");
+            System.out.println("no jacket");
         }else{
             if(difficulty=="BYD"){
                 //adds "_byd" to the end of the jpeg file name it's looking for if the diff is set to byd
